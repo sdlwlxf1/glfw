@@ -241,15 +241,15 @@ int main(int argc, const char * argv[]) {
     GLuint floorTexture = loadTexture("container2.png", width, height, false);
     GLuint transparentTexture = loadTexture("window.png", width, height);
     
-//    glActiveTexture(GL_TEXTURE0);
-//    glBindTexture(GL_TEXTURE_2D, cubeTexture);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, cubeTexture);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
+    glActiveTexture(GL_TEXTURE2);
+    glBindTexture(GL_TEXTURE_2D, floorTexture);
+    glActiveTexture(GL_TEXTURE3);
+    glBindTexture(GL_TEXTURE_2D, transparentTexture);
     glActiveTexture(GL_TEXTURE0);
-//    glActiveTexture(GL_TEXTURE2);
-//    glBindTexture(GL_TEXTURE_2D, floorTexture);
-//    glActiveTexture(GL_TEXTURE3);
-//    glBindTexture(GL_TEXTURE_2D, transparentTexture);
     
     // Positions of the point lights
     glm::vec3 pointLightPositions[] = {
