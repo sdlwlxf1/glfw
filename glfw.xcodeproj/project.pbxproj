@@ -16,10 +16,10 @@
 		167B47A11D5370BA00574407 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47A01D5370BA00574407 /* IOKit.framework */; };
 		167B47A31D5370C100574407 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47A21D5370C100574407 /* Cocoa.framework */; };
 		167B47A51D5370C800574407 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47A41D5370C800574407 /* GLUT.framework */; };
-		167B47A71D53712800574407 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47A61D53712800574407 /* libglfw3.a */; };
 		167B47A91D53714D00574407 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47A81D53714D00574407 /* libGLEW.a */; };
 		167B47C51D5A008E00574407 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B47C41D5A008E00574407 /* libSOIL.a */; };
 		167B47CA1D5CAD0900574407 /* main2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 167B47C91D5CAD0900574407 /* main2.cpp */; };
+		799E6AE31E39EE8E00A8F78F /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 799E6AE21E39EE8E00A8F78F /* libglfw.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,12 +49,12 @@
 		167B47A01D5370BA00574407 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		167B47A21D5370C100574407 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		167B47A41D5370C800574407 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		167B47A61D53712800574407 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 		167B47A81D53714D00574407 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../usr/local/lib/libGLEW.a; sourceTree = "<group>"; };
 		167B47AB1D55A87F00574407 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		167B47C41D5A008E00574407 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
 		167B47C61D5A009F00574407 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
 		167B47C91D5CAD0900574407 /* main2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main2.cpp; sourceTree = "<group>"; };
+		799E6AE21E39EE8E00A8F78F /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = /usr/local/lib/libglfw.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +67,10 @@
 				167B47A31D5370C100574407 /* Cocoa.framework in Frameworks */,
 				167B47A11D5370BA00574407 /* IOKit.framework in Frameworks */,
 				167B479F1D5370B300574407 /* CoreVideo.framework in Frameworks */,
+				799E6AE31E39EE8E00A8F78F /* libglfw.dylib in Frameworks */,
 				167B47A91D53714D00574407 /* libGLEW.a in Frameworks */,
 				167B479B1D52DF0900574407 /* OpenGL.framework in Frameworks */,
 				167B47C51D5A008E00574407 /* libSOIL.a in Frameworks */,
-				167B47A71D53712800574407 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				167B47C11D59FC3C00574407 /* SOIL */,
-				167B47A61D53712800574407 /* libglfw3.a */,
 				166922031D700D9300E0F17A /* libassimp.dylib */,
+				799E6AE21E39EE8E00A8F78F /* libglfw.dylib */,
 				167B47C91D5CAD0900574407 /* main2.cpp */,
 				166921FB1D6FE6EE00E0F17A /* main1.cpp */,
 				166921FD1D6FE6F700E0F17A /* main3.cpp */,
